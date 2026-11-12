@@ -1,0 +1,77 @@
+vboxuser@ubuntu26:~/Documents$ cd zad3
+vboxuser@ubuntu26:~/Documents/zad3$ mkdir Ekipen_Proekt
+vboxuser@ubuntu26:~/Documents/zad3$ cd Ekipen_Proekt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt$ mkdir Dokumenti Dnevnik Backup
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt$ ls
+Backup  Dnevnik  Dokumenti
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt$ cd Dokumenti
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ touch ekip.txt plan.txt pravila.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ ls
+ekip.txt  plan.txt  pravila.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ ekip.txt nano
+ekip.txt: command not found
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ nano ekip.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ nano plan.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ nano pravila.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ ls
+ekip.txt  plan.txt  pravila.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ cp -v ekip.txt plan.txt pravila.txt ~/Documents/zad3/Ekipen_Proekt/Backup
+'ekip.txt' -> '/home/vboxuser/Documents/zad3/Ekipen_Proekt/Backup/ekip.txt'
+'plan.txt' -> '/home/vboxuser/Documents/zad3/Ekipen_Proekt/Backup/plan.txt'
+'pravila.txt' -> '/home/vboxuser/Documents/zad3/Ekipen_Proekt/Backup/pravila.txt'
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ cd ..
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt$ cd Dnevnik
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dnevnik$ touch den1.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dnevnik$ nano den1.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dnevnik$ cp -v den1.txt ~/Documents/zad3/Ekipen_Proekt/Dnevnik/den2.txt
+'den1.txt' -> '/home/vboxuser/Documents/zad3/Ekipen_Proekt/Dnevnik/den2.txt'
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dnevnik$ nano den2.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dnevnik$ cd ..
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt$ cd Backup
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Backup$ ls
+ekip.txt  plan.txt  pravila.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Backup$ mkdir Dnevnici
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Backup$ ls
+Dnevnici  ekip.txt  plan.txt  pravila.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Backup$ cd..
+cd..: command not found
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Backup$ cd ..
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt$ cd Dnevnik
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dnevnik$ cp -v den1.txt den2.txt ~/Documents/zad3/Ekipen_Proekt/Backup/Dnevnici
+'den1.txt' -> '/home/vboxuser/Documents/zad3/Ekipen_Proekt/Backup/Dnevnici/den1.txt'
+'den2.txt' -> '/home/vboxuser/Documents/zad3/Ekipen_Proekt/Backup/Dnevnici/den2.txt'
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dnevnik$ cd..
+cd..: command not found
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dnevnik$ cd ..
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt$ cd Dokumenti
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ nano plan.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ cp -v plan.txt ~/Documents/zad3/Ekipen_Proekt/Backup/plan_obnoven.txt
+'plan.txt' -> '/home/vboxuser/Documents/zad3/Ekipen_Proekt/Backup/plan_obnoven.txt'
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ cd.
+Command 'cd.' not found, did you mean:
+  command 'cdv' from deb erlang-observer (1:27.3.4.6+dfsg-1)
+  command 'cdw' from deb cdw (0.8.1-3build4)
+  command 'cdi' from deb cdo (2.5.4-1)
+  command 'cdb' from deb tinycdb (0.81-2build1)
+  command 'cd5' from deb cd5 (0.1-4build1)
+  command 'cdp' from deb irpas (0.10-10build1)
+  command 'cde' from deb cde (0.1+git9-g551e54d-3)
+  command 'cdo' from deb cdo (2.5.4-1)
+Try: sudo apt install <deb name>
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt/Dokumenti$ cd ..
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt$ ls -R
+.:
+Backup  Dnevnik  Dokumenti
+
+./Backup:
+Dnevnici  ekip.txt  plan.txt  plan_obnoven.txt  pravila.txt
+
+./Backup/Dnevnici:
+den1.txt  den2.txt
+
+./Dnevnik:
+den1.txt  den2.txt
+
+./Dokumenti:
+ekip.txt  plan.txt  pravila.txt
+vboxuser@ubuntu26:~/Documents/zad3/Ekipen_Proekt$ 

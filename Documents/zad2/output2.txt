@@ -1,0 +1,75 @@
+vboxuser@ubuntu26:~/Documents$ ls
+zad1  zad2  zad3
+vboxuser@ubuntu26:~/Documents$ cd zad2
+vboxuser@ubuntu26:~/Documents/zad2$ mkdir Uchilishen_Proekt
+vboxuser@ubuntu26:~/Documents/zad2$ ls
+Uchilishen_Proekt
+vboxuser@ubuntu26:~/Documents/zad2$ cd Uchilishen_Proekt
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt$ mkdir Materiali Predavane Arhiv
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt$ ls
+Arhiv  Materiali  Predavane
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt$ cd Materiali
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Materiali$ touch plan.txt zadaci.txt ekip.txt 
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Materiali$ ls
+ekip.txt  plan.txt  zadaci.txt
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Materiali$ cp -v plan.txt plan_final.txt ~/Documents/zad2/Uchilishen_Proekt/Materiali
+cp: 'plan.txt' and '/home/vboxuser/Documents/zad2/Uchilishen_Proekt/Materiali/plan.txt' are the same file
+cp: cannot stat 'plan_final.txt': No such file or directory
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Materiali$ cp -v plan.txt ~/Documents/zad2/Uchilishen_Proekt/Predavane/plan_final.txt
+'plan.txt' -> '/home/vboxuser/Documents/zad2/Uchilishen_Proekt/Predavane/plan_final.txt'
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Materiali$ cd ..
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt$ cd Predavane
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Predavane$ ls
+plan_final.txt
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Predavane$ touch proverka.txt
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Predavane$ ls]
+Command 'ls]' not found, did you mean:
+  command 'lsw' from deb suckless-tools (49-1)
+  command 'lsd' from deb lsd (1.2.0-1)
+  command 'ls' from deb coreutils-from-gnu (0.0.0~ubuntu25)
+  command 'ls' from deb coreutils-from-uutils (0.0.0~ubuntu25)
+  command 'ls' from deb coreutils-from-busybox (0.0.0~ubuntu25)
+  command 'ls' from deb coreutils-from-toybox (0.0.0~ubuntu25)
+  command 'lsc' from deb livescript (1.6.1+dfsg-4)
+  command 'lsh' from deb lsh-client (2.1-14build2)
+Try: sudo apt install <deb name>
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Predavane$ ls
+plan_final.txt  proverka.txt
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Predavane$ cp -v plan_final.txt ~/Documents/zad2/Uchilishen_Proekt/Arhiv
+'plan_final.txt' -> '/home/vboxuser/Documents/zad2/Uchilishen_Proekt/Arhiv/plan_final.txt'
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Predavane$ cd..
+cd..: command not found
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Predavane$ cd ..
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt$ cd Materiali
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Materiali$ cp -v ekip.txt ~/Documents/zad2/Uchilishen_Proekt/Arhiv/ekip_backup.txt
+'ekip.txt' -> '/home/vboxuser/Documents/zad2/Uchilishen_Proekt/Arhiv/ekip_backup.txt'
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Materiali$ cd ..
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt$ cd Arhiv
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Arhiv$ ls
+ekip_backup.txt  plan_final.txt
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Arhiv$ mkdir Dopalnitelno
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Arhiv$ ls
+Dopalnitelno  ekip_backup.txt  plan_final.txt
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Arhiv$ cd ..
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt$ cd Predavane
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Predavane$ cp -v proverka.txt ~/Documents/zad2/Uchilishen_Proekt/Arhiv/Dopalnitelno
+'proverka.txt' -> '/home/vboxuser/Documents/zad2/Uchilishen_Proekt/Arhiv/Dopalnitelno/proverka.txt'
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt/Predavane$ cd ..
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt$ ls -R
+.:
+Arhiv  Materiali  Predavane
+
+./Arhiv:
+Dopalnitelno  ekip_backup.txt  plan_final.txt
+
+./Arhiv/Dopalnitelno:
+proverka.txt
+
+./Materiali:
+ekip.txt  plan.txt  zadaci.txt
+
+./Predavane:
+plan_final.txt  proverka.txt
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt$ touch output.txt
+vboxuser@ubuntu26:~/Documents/zad2/Uchilishen_Proekt$ 
+

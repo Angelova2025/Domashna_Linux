@@ -1,0 +1,4 @@
+Research
+Develop
+Test
+Publish website
